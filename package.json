@@ -1,0 +1,20 @@
+{
+  "name": "shree-laxmi-industries",
+  "version": "1.0.0",
+  "description": "Shree Laxmi Industries - Crumb Rubber & Polymer Manufacturing Plant, Ahmadpur MIDC, Latur",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "crumb-rubber",
+    "rubber-granules",
+    "crmb",
+    "tyre-recycling",
+    "ahmadpur-midc",
+    "latur"
+  ],
+  "author": "Shree Laxmi Industries",
+  "license": "ISC"
+}
