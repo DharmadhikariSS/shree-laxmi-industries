@@ -1,10 +1,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const ROOT_DIR = process.cwd();
 const PORT = process.env.PORT || 3000;
 
@@ -21,7 +18,7 @@ const MIME_TYPES = {
   '.pdf': 'application/pdf'
 };
 
-const server = http.createServer((req, res) => {
+export default function handler(req, res) {
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
@@ -35,29 +32,43 @@ const server = http.createServer((req, res) => {
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-      res.end('404 Not Found');
+      if (res.writeHead) {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end('404 Not Found');
+      } else if (res.status) {
+        res.status(404).send('404 Not Found');
+      }
       return;
     }
 
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    const cacheControl = ext === '.html' ? 'no-cache' : 'public, max-age=31536000, immutable';
 
-    res.writeHead(200, {
-      'Content-Type': contentType,
-      'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=31536000, immutable'
-    });
-
-    const stream = fs.createReadStream(filePath);
-    stream.pipe(res);
+    if (res.writeHead) {
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Cache-Control': cacheControl
+      });
+      fs.createReadStream(filePath).pipe(res);
+    } else {
+      res.setHeader('Content-Type', contentType);
+      res.setHeader('Cache-Control', cacheControl);
+      fs.createReadStream(filePath).pipe(res);
+    }
   });
-});
+}
 
-server.listen(PORT, () => {
-  console.log(`\n======================================================`);
-  console.log(`Shri Laxmi Industries Website is live!`);
-  console.log(`Local preview: http://localhost:${PORT}`);
-  console.log(`======================================================\n`);
-});
+// Only start the HTTP listener if running locally (not in Vercel serverless environment)
+if (!process.env.VERCEL) {
+  const server = http.createServer((req, res) => {
+    handler(req, res);
+  });
 
-export default server;
+  server.listen(PORT, () => {
+    console.log(`\n======================================================`);
+    console.log(`Shri Laxmi Industries Website is live!`);
+    console.log(`Local preview: http://localhost:${PORT}`);
+    console.log(`======================================================\n`);
+  });
+}

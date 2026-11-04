@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport" />
+  <title>Shri Laxmi Industries | Crumb Rubber Manufacturing • Ahmadpur MIDC, Latur</title>
+  <meta name="description"
+    content="Shri Laxmi Industries — High-purity ambient-ground rubber crumbs (10 to 80 Mesh) for CRMB road asphalt, sports turf, and rubber goods. Facility at Ahmadpur MIDC, Latur." />
+  <link rel="canonical" href="https://shrilaxmiindustries.co.com" />
+  <meta property="og:title" content="Shri Laxmi Industries | Crumb Rubber Manufacturing • Ahmadpur MIDC, Latur" />
+  <meta property="og:description"
+    content="High-purity ambient-ground rubber crumbs (10 to 80 Mesh) for CRMB road asphalt, sports turf, and rubber goods." />
+  <meta property="og:url" content="https://shrilaxmiindustries.co.com" />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Brand Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..600,0..1,0"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // Master Brand Primary: Logo Industrial Cobalt Navy
+            primary: "#1d4280",
+            "primary-container": "#1d4280",
+            "primary-hover": "#143161",
+            "primary-light": "#2858a6",
+            "primary-tint": "#f0f4fa",
+            "on-primary": "#ffffff",
+
+            // Eco & Circular Accent: Logo Forest Green (calibrated contrast scale)
+            "eco-green": "#29783b",
+            "accent-green": "#29783b",
+            emerald: {
+              50: "#edf6ef",   // soft mint badge background
+              100: "#d9ede0",
+              200: "#b5ddc0",  // subtle badge border
+              300: "#7fc290",
+              500: "#29783b",  // exact logo green
+              600: "#29783b",  // exact logo green
+              700: "#1e5e2e",  // accessible WCAG text on light mint
+              800: "#164923",  // strong badge text
+              900: "#0e3117"
+            },
+
+            // Modern Industrial Surfaces & Crisp Slate Neutrals (WCAG AAA contrast)
+            surface: "#f8fafc",
+            background: "#f8fafc",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f5f9",
+            "surface-container": "#e2e8f0",
+            "surface-container-high": "#cbd5e1",
+            "on-surface": "#0f172a",          // Deep slate charcoal
+            "on-surface-variant": "#475569",  // Balanced secondary slate
+            secondary: "#64748b",             // Technical labels & subtitles
+            "outline-border": "#e2e8f0"
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            mono: ["'JetBrains Mono'", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button,
+    a,
+    input,
+    select {
+      touch-action: manipulation;
+    }
+
+    .grid-pattern {
+      background-size: 24px 24px;
+      background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    }
+
+    @media (min-width: 640px) {
+      .grid-pattern {
+        background-size: 32px 32px;
+      }
+    }
+
+    /* ==========================================================================
+       Tier-1 Industrial Radial Depth & Subtle Border Gradients
+       ========================================================================== */
+    .hero-radial-gradient {
+      background-color: #f8fafc;
+      background-image:
+        radial-gradient(ellipse 85% 65% at 50% -10%, rgba(29, 66, 128, 0.08) 0%, rgba(41, 120, 59, 0.03) 45%, transparent 75%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 24px 24px, 24px 24px;
+    }
+
+    @media (min-width: 640px) {
+      .hero-radial-gradient {
+        background-size: 100% 100%, 32px 32px, 32px 32px;
+      }
+    }
+
+    /* Subtle Border Gradient Cards */
+    .tier1-card {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 0.75rem;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .tier1-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(29, 66, 128, 0.3), rgba(41, 120, 59, 0.18) 35%, transparent 75%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.45;
+      pointer-events: none;
+      transition: opacity 0.25s ease, background 0.25s ease;
+    }
+
+    .tier1-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(29, 66, 128, 0.35);
+      box-shadow: 0 12px 28px -6px rgba(29, 66, 128, 0.09), 0 4px 8px -2px rgba(0, 0, 0, 0.02);
+    }
+
+    .tier1-card:hover::before {
+      opacity: 1;
+      background: linear-gradient(135deg, rgba(29, 66, 128, 0.65), rgba(41, 120, 59, 0.4) 45%, transparent 85%);
+    }
+
+    /* Subtle Gradient Sheen for Industrial Container Frames */
+    .tier1-frame {
+      position: relative;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfcfd 100%);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 6px 24px -4px rgba(29, 66, 128, 0.05);
+    }
+
+    .tier1-frame::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(180deg, rgba(29, 66, 128, 0.22), rgba(226, 232, 240, 0.4) 45%, transparent);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    /* Primary Button Subtle Metallic / Cobalt Gradient */
+    .btn-gradient-primary {
+      background: linear-gradient(180deg, #234f96 0%, #1d4280 100%);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-gradient-primary:hover {
+      background: linear-gradient(180deg, #1d4280 0%, #143161 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px -2px rgba(29, 66, 128, 0.3);
+    }
+
+    .btn-gradient-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(29, 66, 128, 0.2);
+    }
+
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+
+      #tds-modal,
+      #tds-modal * {
+        visibility: visible;
+      }
+
+      #tds-modal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased selection:bg-primary-container selection:text-white">
+
+  <!-- ==================== HEADER ==================== -->
+  <header
+    class="fixed top-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-border">
+    <div class="max-w-7xl mx-auto h-16 sm:h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+
+      <!-- Logo & Identity (Protected against shrinkage and collisions) -->
+      <a href="https://shrilaxmiindustries.co.com"
+        class="flex items-center gap-2.5 sm:gap-3 group select-none shrink-0 pr-2">
+        <img src="/logo.svg" alt="Shri Laxmi Industries Logo"
+          class="h-9 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105 duration-200"
+          onerror="this.onerror=null; this.src='/logo-web.png';" />
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <span
+              class="font-bold text-xs sm:text-sm tracking-wider text-primary uppercase group-hover:text-primary-container transition-colors whitespace-nowrap">
+              Shri Laxmi Industries
+            </span>
+            <span
+              class="hidden min-[360px]:inline-flex items-center gap-1 px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-50 text-[9px] sm:text-[10px] font-mono font-semibold text-emerald-800 border border-emerald-200 whitespace-nowrap">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+              Ahmadpur MIDC
+            </span>
+          </div>
+          <span
+            class="font-mono text-[9px] sm:text-[11px] text-secondary tracking-normal mt-0.5 uppercase whitespace-nowrap">
+            Crumb Rubber &amp; Polymers • Latur
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation & Action -->
+      <div class="flex items-center gap-3 sm:gap-6 shrink-0">
+        <nav class="hidden md:flex items-center gap-1 text-sm font-medium whitespace-nowrap">
+          <a href="#overview"
+            class="px-3 py-1.5 rounded-md text-on-surface hover:bg-surface-container-low transition-colors">Overview</a>
+          <a href="#specs"
+            class="px-3 py-1.5 rounded-md text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors">Products</a>
+          <a href="#plant"
+            class="px-3 py-1.5 rounded-md text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors">Plant
+            &amp; Setup</a>
+          <a href="#advantages"
+            class="px-3 py-1.5 rounded-md text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors">Advantages</a>
+          <a href="#inquiry"
+            class="px-3 py-1.5 rounded-md text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors">Contact</a>
+        </nav>
+
+        <a href="#inquiry"
+          class="btn-gradient-primary hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-white text-xs font-semibold uppercase tracking-wider whitespace-nowrap">
+          <span>RFQ Desk</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors focus:outline-none"
+          aria-label="Toggle navigation menu">
+          <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-white border-b border-outline-border px-4 py-3 space-y-2 shadow-lg">
+      <div class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low mb-1">
+        <img src="/logo.svg" alt="Shri Laxmi Industries" class="h-8 w-auto object-contain shrink-0"
+          onerror="this.onerror=null; this.src='/logo-web.png';" />
+        <div class="truncate">
+          <div class="font-bold text-xs uppercase text-primary tracking-wide">Shri Laxmi Industries</div>
+          <div class="text-[10px] font-mono text-emerald-700 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
+            Ahmadpur MIDC, Latur
+          </div>
+        </div>
+      </div>
+      <a href="#overview"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-on-surface hover:bg-surface-container-low whitespace-nowrap">Overview</a>
+      <a href="#specs"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-secondary hover:text-on-surface hover:bg-surface-container-low whitespace-nowrap">Products
+        &amp; Mesh Sizes</a>
+      <a href="#plant"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-secondary hover:text-on-surface hover:bg-surface-container-low whitespace-nowrap">Plant
+        &amp; Infrastructure</a>
+      <a href="#advantages"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-medium text-secondary hover:text-on-surface hover:bg-surface-container-low whitespace-nowrap">Strategic
+        Advantages</a>
+      <a href="#inquiry"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-sm font-semibold text-primary-container bg-emerald-50/60 rounded-md whitespace-nowrap">Direct
+        RFQ Inquiry →</a>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="w-full pt-16 sm:pt-20 bg-surface">
+
+    <!-- SECTION 1: HEADER & HERO -->
+    <section id="overview"
+      class="w-full px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16 lg:py-24 border-b border-outline-border hero-radial-gradient">
+      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+
+        <!-- Status Badge Pill (Optimized for Mobile with no text wrap) -->
+        <div
+          class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-gradient-to-r from-white via-surface-container-lowest to-emerald-50/40 border border-outline-border shadow-sm mb-5 sm:mb-6 max-w-full">
+          <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0 animate-pulse"></span>
+          <!-- Mobile view text -->
+          <span
+            class="sm:hidden font-mono text-[10px] text-primary-container font-semibold tracking-tight whitespace-nowrap">
+            Upcoming Plant • Ahmadpur MIDC (Govt. Backed)
+          </span>
+          <!-- Tablet / Desktop view text -->
+          <span
+            class="hidden sm:inline font-mono text-xs text-primary-container font-semibold tracking-tight whitespace-nowrap">
+            Upcoming Plant • Ahmadpur MIDC, Latur (Govt. Incentive Backed)
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1
+          class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface max-w-4xl tracking-tight leading-[1.15] mb-4 sm:mb-5">
+          Pure Industrial Rubber Crumbs &amp; Granules.
+        </h1>
+
+        <!-- Subhead (Clean 1 Sentence) -->
+        <p
+          class="text-xs sm:text-base md:text-lg text-on-surface-variant max-w-2xl sm:max-w-3xl mb-6 sm:mb-8 leading-relaxed font-normal">
+          High-purity, ambient-ground crumb rubber engineered for road asphalt (CRMB), sports flooring, and rubber
+          manufacturing.
+        </p>
+
+        <!-- CTA Buttons (Full width on mobile, inline on desktop) -->
+        <div
+          class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto mb-8 sm:mb-14">
+          <a href="#inquiry"
+            class="btn-gradient-primary w-full sm:w-auto px-6 py-3.5 rounded-lg text-white font-semibold text-xs sm:text-sm tracking-wide text-center whitespace-nowrap">
+            Request Price &amp; Samples
+          </a>
+          <button id="open-tds-btn"
+            class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-semibold text-xs sm:text-sm border border-outline-border flex items-center justify-center gap-2 hover:bg-surface-container-low transition-all duration-150 shadow-sm whitespace-nowrap">
+            <span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+            <span>Download Specs PDF</span>
+          </button>
+        </div>
+
+        <!-- Hero Visual Frame (Mobile ratio friendly) -->
+        <div class="tier1-frame w-full max-w-5xl rounded-xl overflow-hidden p-1.5 sm:p-3">
+          <div
+            class="relative w-full aspect-[16/10] sm:aspect-[16/9] md:aspect-[21/9] rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center">
+
+            <!-- Real photo with fallback background -->
+            <img alt="Industrial crumb rubber and calibrated polymer granules displayed in factory testing bay"
+              class="w-full h-full object-cover object-center"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR-5OZR2SPgoIXgL5fbrW8xtJ3R_zXeYSpHubodp5zi2X0iSTt9hslD1LWT06Z2p3NHTVrI50-tl9S740_gyikENyuyqOntfAvP7lf_9NwrjcnO8A1Ad075a7j7_WeURB92eDU5O3l7PTRcwuUoXoRRvXCrYM9UiZCPC_CCAflSszn8XO9XSi7yTOlQLyu3qZANDJ6DKspC477EaQ3cTbZJLZfERqQ-HIO7bGpSms"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80';" />
+
+            <!-- Subtle gradient vignette for readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30"></div>
+
+            <!-- Technical overlay badge (Top-left on mobile, bottom-left on desktop) -->
+            <div
+              class="absolute top-2.5 left-2.5 sm:top-auto sm:bottom-4 sm:left-4 bg-surface-container-lowest/95 backdrop-blur-md px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-md border border-outline-border text-left shadow-sm">
+              <span
+                class="font-mono text-[9px] sm:text-[10px] text-secondary uppercase tracking-wider block font-semibold whitespace-nowrap">Ambient
+                Grinding Output</span>
+              <span class="font-mono text-[10px] sm:text-sm text-on-surface font-medium whitespace-nowrap">Batch
+                Calibrated Mesh 10–80</span>
+            </div>
+
+            <!-- QA Spec Tag (Bottom-right on mobile and desktop) -->
+            <div
+              class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 bg-primary-container/90 backdrop-blur-md px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-md text-white text-left shadow-sm">
+              <span
+                class="font-mono text-[9px] sm:text-[10px] text-emerald-300 uppercase tracking-wider block whitespace-nowrap">Purity
+                Standard</span>
+              <span class="font-mono text-[10px] sm:text-xs font-medium whitespace-nowrap">Zero-Steel •
+                Zero-Fiber</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: PRODUCT SIZES (4 CLEAN CARDS) -->
+    <section id="specs"
+      class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 bg-surface-container-low border-b border-outline-border">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 gap-3 sm:gap-4 pb-4 sm:pb-6 border-b border-outline-border/60">
+          <div>
+            <span
+              class="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-secondary block mb-1 font-semibold whitespace-nowrap">
+              CALIBRATED SPECIFICATIONS
+            </span>
+            <h2 class="text-xl sm:text-3xl font-bold text-on-surface tracking-tight whitespace-nowrap">
+              Product Sizes
+            </h2>
+          </div>
+          <div
+            class="font-mono text-[10px] sm:text-sm text-secondary bg-white px-3 py-1.5 rounded-md border border-outline-border inline-block self-start sm:self-auto whitespace-nowrap shadow-sm">
+            Zero-Steel • Zero-Fiber • &lt;0.75% Ash
+          </div>
+        </div>
+
+        <!-- 4-Column Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+          <!-- Card 1: 10-20 Mesh -->
+          <div class="tier1-card p-5 sm:p-6 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-3 sm:mb-4">
+                <span class="font-mono text-xs text-secondary uppercase font-semibold whitespace-nowrap">Mesh
+                  Caliber</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-700 shrink-0"></span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-on-surface mb-1 whitespace-nowrap">10–20 Mesh</h3>
+              <div class="font-mono text-xs text-primary font-semibold mb-2.5 whitespace-nowrap">0.85 – 2.00 mm</div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Road base underlayment, sports turf infill, resilient playground tiles, and civil vibration pads.
+              </p>
+            </div>
+            <div class="mt-6 sm:mt-8 pt-3 sm:pt-4 border-t border-outline-border/60">
+              <button onclick="selectMeshForSample('10-20')"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-light transition-colors group whitespace-nowrap">
+                <span>Request Sample</span>
+                <span
+                  class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: 20-40 Mesh -->
+          <div class="tier1-card p-5 sm:p-6 flex flex-col justify-between shadow-sm ring-1 ring-primary/20">
+            <div>
+              <div class="flex items-center justify-between mb-3 sm:mb-4">
+                <span class="font-mono text-xs text-secondary uppercase font-semibold whitespace-nowrap">Mesh
+                  Caliber</span>
+                <span
+                  class="px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono bg-emerald-50 text-emerald-800 border border-emerald-200 whitespace-nowrap">High
+                  Demand</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-on-surface mb-1 whitespace-nowrap">20–40 Mesh</h3>
+              <div class="font-mono text-xs text-primary font-semibold mb-2.5 whitespace-nowrap">0.425 – 0.85 mm</div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Optimized for CRMB (Crumb Rubber Modified Bitumen) asphalt paving, running tracks, and athletic
+                surfaces.
+              </p>
+            </div>
+            <div class="mt-6 sm:mt-8 pt-3 sm:pt-4 border-t border-outline-border/60">
+              <button onclick="selectMeshForSample('20-40')"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-light transition-colors group whitespace-nowrap">
+                <span>Request Sample</span>
+                <span
+                  class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: 40-60 Mesh -->
+          <div class="tier1-card p-5 sm:p-6 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-3 sm:mb-4">
+                <span class="font-mono text-xs text-secondary uppercase font-semibold whitespace-nowrap">Mesh
+                  Caliber</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-700 shrink-0"></span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-on-surface mb-1 whitespace-nowrap">40–60 Mesh</h3>
+              <div class="font-mono text-xs text-primary font-semibold mb-2.5 whitespace-nowrap">0.25 – 0.425 mm</div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Molded rubber goods, conveyor belts, footwear soles, gaskets, and heavy industrial sheeting.
+              </p>
+            </div>
+            <div class="mt-6 sm:mt-8 pt-3 sm:pt-4 border-t border-outline-border/60">
+              <button onclick="selectMeshForSample('40-60')"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-light transition-colors group whitespace-nowrap">
+                <span>Request Sample</span>
+                <span
+                  class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: 60-80 Mesh -->
+          <div class="tier1-card p-5 sm:p-6 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between mb-3 sm:mb-4">
+                <span class="font-mono text-xs text-secondary uppercase font-semibold whitespace-nowrap">Mesh
+                  Caliber</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-700 shrink-0"></span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-on-surface mb-1 whitespace-nowrap">60–80 Mesh</h3>
+              <div class="font-mono text-xs text-primary font-semibold mb-2.5 whitespace-nowrap">0.18 – 0.25 mm</div>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Micronized precision compounding, virgin polymer extension, masterbatches, and specialty acoustic seals.
+              </p>
+            </div>
+            <div class="mt-6 sm:mt-8 pt-3 sm:pt-4 border-t border-outline-border/60">
+              <button onclick="selectMeshForSample('60-80')"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-light transition-colors group whitespace-nowrap">
+                <span>Request Sample</span>
+                <span
+                  class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: PLANT & ADVANTAGE (3-POINT GRID) -->
+    <section id="plant"
+      class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 bg-surface border-b border-outline-border">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="mb-8 sm:mb-12 max-w-2xl">
+          <span
+            class="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-secondary block mb-1 font-semibold whitespace-nowrap">
+            INFRASTRUCTURE &amp; ADVANTAGE
+          </span>
+          <h2 class="text-xl sm:text-3xl font-bold text-on-surface tracking-tight">
+            Engineered for Heavy Manufacturing Dependability.
+          </h2>
+        </div>
+
+        <!-- 3 Clean Column Cards -->
+        <div id="advantages" class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+
+          <!-- Advantage 01 -->
+          <div class="tier1-card p-5 sm:p-8 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="font-mono text-2xl sm:text-3xl font-bold text-primary/30 mb-3 sm:mb-4 select-none">
+                01
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-on-surface mb-2 whitespace-nowrap">
+                Ahmadpur MIDC, Latur
+              </h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-5 sm:mb-6">
+                Centrally located in Maharashtra with strong transport access. Direct freight corridors connecting major
+                state infrastructure and highway packages.
+              </p>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg border border-outline-border/50">
+              <span
+                class="font-mono text-[10px] text-secondary uppercase font-semibold block mb-0.5 whitespace-nowrap">Logistics
+                Corridor</span>
+              <span class="font-mono text-[11px] sm:text-xs text-on-surface block">NH arterial connectivity • heavy
+                freight corridors</span>
+            </div>
+          </div>
+
+          <!-- Advantage 02 -->
+          <div class="tier1-card p-5 sm:p-8 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="font-mono text-2xl sm:text-3xl font-bold text-primary/30 mb-3 sm:mb-4 select-none">
+                02
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-on-surface mb-2 whitespace-nowrap">
+                Government-Backed Setup
+              </h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-5 sm:mb-6">
+                Capital-subsidized greenfield project ensuring stable long-term supply, zero raw material disruptions,
+                and competitive industrial pricing.
+              </p>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg border border-outline-border/50">
+              <span
+                class="font-mono text-[10px] text-secondary uppercase font-semibold block mb-0.5 whitespace-nowrap">Policy
+                Framework</span>
+              <span class="font-mono text-[11px] sm:text-xs text-on-surface block">State Industrial Package Scheme of
+                Incentives (PSI)</span>
+            </div>
+          </div>
+
+          <!-- Advantage 03 -->
+          <div class="tier1-card p-5 sm:p-8 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="font-mono text-2xl sm:text-3xl font-bold text-primary/30 mb-3 sm:mb-4 select-none">
+                03
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-on-surface mb-2 whitespace-nowrap">
+                Ongoing Facility Setup
+              </h3>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-5 sm:mb-6">
+                Commissioning modern shredding &amp; multi-stage magnetic separation lines. Designed to guarantee 99.9%
+                metal-free purity for critical applications.
+              </p>
+            </div>
+            <div class="bg-surface-container-low p-3 rounded-lg border border-outline-border/50">
+              <span
+                class="font-mono text-[10px] text-secondary uppercase font-semibold block mb-0.5 whitespace-nowrap">Quality
+                Assurance</span>
+              <span class="font-mono text-[11px] sm:text-xs text-on-surface block">Zero-metal purity • automated
+                mechanical grading</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Setup Progress Tracker (Clean & Mobile-Ready) -->
+        <div class="bg-white rounded-xl p-4 sm:p-6 border border-outline-border shadow-sm">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 mb-3 sm:mb-4 border-b border-outline-border/60 gap-2">
+            <div>
+              <span
+                class="font-mono text-[10px] sm:text-[11px] text-secondary uppercase tracking-wider font-semibold whitespace-nowrap block">Plant
+                Execution Status</span>
+              <h4 class="text-xs sm:text-sm font-bold text-on-surface whitespace-nowrap">Ahmadpur MIDC Greenfield
+                Progress</h4>
+            </div>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 text-[10px] sm:text-xs font-mono font-medium border border-amber-200 whitespace-nowrap self-start sm:self-auto">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping shrink-0"></span>
+              Active Commissioning Phase
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 font-mono text-xs">
+            <div class="flex items-center gap-3 p-2 sm:p-0 rounded-lg bg-surface-container-low/60 sm:bg-transparent">
+              <span
+                class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+              <div class="min-w-0">
+                <span class="text-on-surface font-semibold block whitespace-nowrap">Civil Shed &amp; Flooring</span>
+                <span class="text-secondary text-[10px] sm:text-[11px] block whitespace-nowrap">Completed &amp; Power
+                  Connected</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 sm:p-0 rounded-lg bg-surface-container-low/60 sm:bg-transparent">
+              <span
+                class="w-6 h-6 rounded-full bg-primary-container text-white flex items-center justify-center font-bold text-xs shrink-0">⚙</span>
+              <div class="min-w-0">
+                <span class="text-on-surface font-semibold block whitespace-nowrap">Machinery Erection</span>
+                <span class="text-secondary text-[10px] sm:text-[11px] block whitespace-nowrap">Shredders &amp; Sieve
+                  Lines Active</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 p-2 sm:p-0 rounded-lg bg-surface-container-low/60 sm:bg-transparent">
+              <span
+                class="w-6 h-6 rounded-full bg-surface-container-high text-secondary flex items-center justify-center font-bold text-xs shrink-0">3</span>
+              <div class="min-w-0">
+                <span class="text-on-surface font-semibold block whitespace-nowrap">Commercial Trial Runs</span>
+                <span class="text-secondary text-[10px] sm:text-[11px] block whitespace-nowrap">Advance Bulk Booking
+                  Open</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: QUICK B2B INQUIRY -->
+    <section id="inquiry" class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 bg-surface-container-low">
+      <div class="max-w-2xl mx-auto">
+
+        <!-- Card Container -->
+        <div class="tier1-frame rounded-xl p-5 sm:p-8 md:p-10">
+
+          <div class="text-center mb-6 sm:mb-8">
+            <span
+              class="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-secondary block mb-1 font-semibold whitespace-nowrap">
+              PROCUREMENT • TENDER ALLOCATION
+            </span>
+            <h2 class="text-xl sm:text-3xl font-bold text-on-surface mb-1.5 whitespace-nowrap">
+              Quick B2B Inquiry
+            </h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant max-w-md mx-auto">
+              Direct factory allocation and technical sample dispatches from Ahmadpur MIDC.
+            </p>
+          </div>
+
+          <!-- Dynamic Notification Toast for Sample click -->
+          <div id="sample-notice"
+            class="hidden mb-5 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-mono flex items-center justify-between gap-2">
+            <span id="sample-notice-text" class="truncate">Selected mesh size for sample request.</span>
+            <button onclick="document.getElementById('sample-notice').classList.add('hidden')"
+              class="text-emerald-700 hover:text-emerald-900 shrink-0 font-bold px-1">✕</button>
+          </div>
+
+          <!-- Form (Using text-base on mobile to avoid iOS Safari auto-zoom) -->
+          <form id="rfq-form" class="space-y-4">
+
+            <!-- Field 1: Name / Company -->
+            <div class="space-y-1">
+              <label class="block text-xs font-semibold text-on-surface uppercase tracking-wider whitespace-nowrap"
+                for="field-company">
+                Name / Company <span class="text-red-500">*</span>
+              </label>
+              <input id="field-company"
+                class="w-full bg-surface-container-low border border-outline-border text-on-surface placeholder:text-secondary rounded-lg px-3.5 py-3 text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-primary-container focus:bg-white transition-all"
+                placeholder="e.g. Patil Infrastructure Ltd / Paving Contractor" required type="text" />
+            </div>
+
+            <!-- Field 2: Phone / Email -->
+            <div class="space-y-1">
+              <label class="block text-xs font-semibold text-on-surface uppercase tracking-wider whitespace-nowrap"
+                for="field-contact">
+                Phone / Email <span class="text-red-500">*</span>
+              </label>
+              <input id="field-contact"
+                class="w-full bg-surface-container-low border border-outline-border text-on-surface placeholder:text-secondary rounded-lg px-3.5 py-3 text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-primary-container focus:bg-white transition-all"
+                placeholder="Phone number or procurement email" required type="text" />
+            </div>
+
+            <!-- 2 Column Row for Specifications -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+              <!-- Field 3: Required Mesh Size -->
+              <div class="space-y-1">
+                <label class="block text-xs font-semibold text-on-surface uppercase tracking-wider whitespace-nowrap"
+                  for="field-mesh">
+                  Required Mesh Size
+                </label>
+                <select id="field-mesh"
+                  class="w-full bg-surface-container-low border border-outline-border text-on-surface rounded-lg px-3.5 py-3 text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-primary-container focus:bg-white transition-all cursor-pointer font-medium">
+                  <option value="10-20">10–20 Mesh (0.85 – 2.0 mm)</option>
+                  <option value="20-40" selected>20–40 Mesh (0.425 – 0.85 mm)</option>
+                  <option value="40-60">40–60 Mesh (0.25 – 0.425 mm)</option>
+                  <option value="60-80">60–80 Mesh (0.18 – 0.25 mm)</option>
+                  <option value="custom">Custom Graded Blend</option>
+                </select>
+              </div>
+
+              <!-- Field 4: Monthly Requirement -->
+              <div class="space-y-1">
+                <label class="block text-xs font-semibold text-on-surface uppercase tracking-wider whitespace-nowrap"
+                  for="field-volume">
+                  Monthly Requirement (Tons)
+                </label>
+                <input id="field-volume"
+                  class="w-full bg-surface-container-low border border-outline-border text-on-surface placeholder:text-secondary rounded-lg px-3.5 py-3 text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-primary-container focus:bg-white transition-all"
+                  placeholder="e.g. 25 MT / Sample Lot" type="text" />
+              </div>
+
+            </div>
+
+            <!-- Submit Button Actions (Full width, no wrap) -->
+            <div class="pt-2 space-y-2.5">
+              <button type="submit"
+                class="btn-gradient-primary w-full py-3.5 px-6 rounded-lg text-white text-xs font-bold uppercase tracking-wider text-center shadow-sm flex items-center justify-center gap-2 whitespace-nowrap">
+                <span>Submit RFQ</span>
+                <span class="material-symbols-outlined text-[16px]">send</span>
+              </button>
+
+              <button type="button" id="whatsapp-btn"
+                class="w-full py-3 px-6 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-semibold uppercase tracking-wider hover:bg-emerald-100 border border-emerald-200 transition-colors text-center flex items-center justify-center gap-2 whitespace-nowrap">
+                <span>Inquire on WhatsApp Desk</span>
+                <span class="material-symbols-outlined text-[16px]">chat</span>
+              </button>
+            </div>
+
+            <!-- Minimalist Reassurance Note -->
+            <div class="pt-2 text-center">
+              <span class="font-mono text-[10px] sm:text-[11px] text-secondary">
+                Guaranteed confidential procurement desk. Direct liaison from Ahmadpur MIDC.
+              </span>
+            </div>
+
+          </form>
+
+          <!-- Feedback Success Alert (Hidden Initially) -->
+          <div id="rfq-success" class="hidden text-center py-6 sm:py-8 space-y-3 sm:space-y-4">
+            <div
+              class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+              <span class="material-symbols-outlined text-2xl sm:text-3xl">check_circle</span>
+            </div>
+            <div>
+              <span id="rfq-id" class="font-mono text-xs text-secondary block font-semibold whitespace-nowrap">TICKET
+                ID: SLI-2025-0842</span>
+              <h3 class="text-lg sm:text-xl font-bold text-on-surface mt-1 whitespace-nowrap">RFQ Dispatched
+                Successfully</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-on-surface-variant max-w-sm mx-auto leading-relaxed">
+              Your inquiry has been routed directly to our industrial procurement desk at Ahmadpur MIDC. Our technical
+              liaison will contact you within 4 hours.
+            </p>
+            <div class="pt-3 flex justify-center">
+              <button onclick="resetRfqForm()"
+                class="px-4 py-2 text-xs font-mono text-primary-container hover:bg-surface-container-low rounded-md border border-outline-border whitespace-nowrap">
+                Submit Another Inquiry
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-outline-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 sm:gap-8 pb-6 sm:pb-8 border-b border-outline-border/60">
+
+        <div class="flex items-start gap-3.5 sm:gap-4">
+          <img src="/logo.svg" alt="Shri Laxmi Industries Logo"
+            class="h-12 sm:h-14 w-auto object-contain shrink-0 mt-0.5"
+            onerror="this.onerror=null; this.src='/logo-web.png';" />
+          <div class="space-y-1">
+            <div class="font-bold text-sm uppercase text-primary tracking-wider whitespace-nowrap">
+              Shri Laxmi Industries
+            </div>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Factory Location: Ahmadpur Industrial Area (MIDC), Taluka Ahmadpur, District Latur - 413515, Maharashtra
+            </p>
+            <span class="inline-block font-mono text-[10px] sm:text-[11px] text-secondary">
+              Government Scheme of Incentives (PSI) Certified Project
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 w-full md:w-auto">
+          <div class="space-y-0.5">
+            <span
+              class="block font-mono text-[9px] sm:text-[10px] text-secondary uppercase tracking-widest font-semibold whitespace-nowrap">Official
+              Portal</span>
+            <a href="https://shrilaxmiindustries.co.com"
+              class="font-mono text-xs text-primary-container font-semibold hover:underline block whitespace-nowrap">
+              shrilaxmiindustries.co.com
+            </a>
+          </div>
+          <div class="space-y-0.5">
+            <span
+              class="block font-mono text-[9px] sm:text-[10px] text-secondary uppercase tracking-widest font-semibold whitespace-nowrap">Industrial
+              Inquiries</span>
+            <a href="mailto:inquiries@shrilaxmiindustries.co.com"
+              class="font-mono text-xs text-on-surface hover:text-primary transition-colors block whitespace-nowrap">
+              inquiries@shrilaxmiindustries.co.com
+            </a>
+          </div>
+          <div class="space-y-0.5">
+            <span
+              class="block font-mono text-[9px] sm:text-[10px] text-secondary uppercase tracking-widest font-semibold whitespace-nowrap">Direct
+              Dispatch Desk</span>
+            <span class="font-mono text-xs text-on-surface block whitespace-nowrap">
+              +91 (02381) 224091 / +91 94220 00000
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="pt-5 sm:pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] sm:text-xs font-mono text-secondary">
+        <div class="text-center sm:text-left">
+          © 2026 Shri Laxmi Industries. DIN &amp; ASTM D5603 Industrial Standards.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#overview" class="hover:text-on-surface transition-colors whitespace-nowrap">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TECHNICAL DATA SHEET (TDS) MODAL ==================== -->
+  <div id="tds-modal"
+    class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div
+      class="bg-white rounded-xl max-w-2xl w-full max-h-[92vh] overflow-y-auto p-4 sm:p-8 border border-outline-border shadow-2xl relative">
+
+      <!-- Modal Close Button -->
+      <button id="close-tds-btn"
+        class="no-print absolute top-3 right-3 sm:top-4 sm:right-4 p-2 text-secondary hover:text-on-surface rounded-lg hover:bg-slate-100 transition-colors"
+        aria-label="Close modal">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+
+      <!-- Printable TDS Header -->
+      <div class="border-b border-outline-border pb-3 sm:pb-4 mb-4 sm:mb-6 pr-8">
+        <div class="flex items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <img src="/logo.svg" alt="Shri Laxmi Industries Logo" class="h-11 sm:h-14 w-auto object-contain shrink-0"
+              onerror="this.onerror=null; this.src='/logo-web.png';" />
+            <div>
+              <h3 class="font-bold text-sm sm:text-base text-primary uppercase tracking-wider whitespace-nowrap">Shri
+                Laxmi Industries</h3>
+              <span class="font-mono text-[11px] sm:text-xs text-secondary block whitespace-nowrap">Ahmadpur MIDC,
+                Latur, Maharashtra • QA Laboratory</span>
+              <a href="https://shrilaxmiindustries.co.com" target="_blank"
+                class="font-mono text-[10px] sm:text-[11px] text-primary-container hover:underline block mt-0.5 whitespace-nowrap">
+                shrilaxmiindustries.co.com
+              </a>
+            </div>
+          </div>
+          <span
+            class="font-mono text-[9px] sm:text-[10px] px-2 py-1 bg-slate-100 rounded text-slate-700 font-semibold uppercase whitespace-nowrap shrink-0">
+            DOC: TDS-CR-2025
+          </span>
+        </div>
+        <h2 class="text-base sm:text-xl font-bold text-on-surface mt-2 sm:mt-3">Technical Data Sheet (TDS) — Crumb
+          Rubber</h2>
+        <p class="text-[11px] sm:text-xs text-secondary font-mono">Standard Test Methods: ASTM D5603 / IRC:SP:53
+          Compliance</p>
+      </div>
+
+      <!-- Specification Table (Horizontally scrollable on small mobile screens without squishing) -->
+      <div class="space-y-3 sm:space-y-4 mb-5 sm:mb-6">
+        <div
+          class="text-[11px] sm:text-xs font-semibold text-secondary uppercase tracking-wider font-mono whitespace-nowrap">
+          Physical &amp; Chemical Properties (Typical Values)
+        </div>
+
+        <div class="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+          <table class="w-full text-left text-xs font-mono border-collapse min-w-[480px]">
+            <thead>
+              <tr class="border-b border-outline-border bg-slate-50 text-secondary whitespace-nowrap">
+                <th class="py-2 px-3">Parameter</th>
+                <th class="py-2 px-3">Test Method</th>
+                <th class="py-2 px-3">Standard Limit</th>
+                <th class="py-2 px-3">SLI Batch Quality</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-border whitespace-nowrap">
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Free Steel / Wire Content</td>
+                <td class="py-2.5 px-3 text-secondary">Magnetic Sep.</td>
+                <td class="py-2.5 px-3">&lt; 0.05%</td>
+                <td class="py-2.5 px-3 text-emerald-700 font-bold">&lt; 0.01% (Zero Free)</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Fiber &amp; Textile Fluff</td>
+                <td class="py-2.5 px-3 text-secondary">Aspiration</td>
+                <td class="py-2.5 px-3">&lt; 0.50%</td>
+                <td class="py-2.5 px-3 text-emerald-700 font-bold">&lt; 0.10%</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Moisture Content</td>
+                <td class="py-2.5 px-3 text-secondary">ASTM D1509</td>
+                <td class="py-2.5 px-3">&lt; 1.0%</td>
+                <td class="py-2.5 px-3 text-on-surface">&lt; 0.65%</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Ash Content</td>
+                <td class="py-2.5 px-3 text-secondary">ASTM D297</td>
+                <td class="py-2.5 px-3">&lt; 8.0%</td>
+                <td class="py-2.5 px-3 text-on-surface">4.5 – 6.2%</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Specific Gravity</td>
+                <td class="py-2.5 px-3 text-secondary">Pycnometer</td>
+                <td class="py-2.5 px-3">1.10 – 1.25</td>
+                <td class="py-2.5 px-3 text-on-surface">1.16 ± 0.03 g/cm³</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 px-3 font-semibold text-on-surface">Standard Packaging</td>
+                <td class="py-2.5 px-3 text-secondary">Industrial FIBC</td>
+                <td class="py-2.5 px-3">Standard</td>
+                <td class="py-2.5 px-3 text-on-surface">50 kg HDPE / 1,000 kg Jumbo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Action Buttons inside Modal -->
+      <div
+        class="no-print pt-4 border-t border-outline-border flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <span class="font-mono text-[10px] sm:text-[11px] text-secondary text-center sm:text-left">
+          Certified for CRMB Asphalt &amp; Rubber Compounding.
+        </span>
+        <div class="flex items-center gap-2 w-full sm:w-auto">
+          <button onclick="window.print()"
+            class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg bg-primary-container text-white text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors flex items-center justify-center gap-1.5 whitespace-nowrap">
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Print / Save PDF</span>
+          </button>
+          <button id="close-tds-bottom-btn"
+            class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg border border-outline-border text-on-surface text-xs font-semibold hover:bg-slate-50 transition-colors whitespace-nowrap">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Mobile Navigation Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+
+    // Close mobile menu on clicking any link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.textContent = 'menu';
+      });
+    });
+
+    // Technical Data Sheet (TDS) Modal Handling
+    const tdsModal = document.getElementById('tds-modal');
+    const openTdsBtn = document.getElementById('open-tds-btn');
+    const closeTdsBtn = document.getElementById('close-tds-btn');
+    const closeTdsBottomBtn = document.getElementById('close-tds-bottom-btn');
+
+    function openModal() {
+      tdsModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      tdsModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    openTdsBtn.addEventListener('click', openModal);
+    closeTdsBtn.addEventListener('click', closeModal);
+    closeTdsBottomBtn.addEventListener('click', closeModal);
+    tdsModal.addEventListener('click', (e) => {
+      if (e.target === tdsModal) closeModal();
+    });
+
+    // Interactive Sample Request handler from product cards
+    window.selectMeshForSample = function (meshValue) {
+      const select = document.getElementById('field-mesh');
+      if (select) {
+        select.value = meshValue;
+      }
+
+      const notice = document.getElementById('sample-notice');
+      const noticeText = document.getElementById('sample-notice-text');
+      if (notice && noticeText) {
+        noticeText.textContent = `Auto-selected ${meshValue} Mesh for your sample inquiry.`;
+        notice.classList.remove('hidden');
+      }
+
+      // Smooth scroll to inquiry section
+      const inquirySec = document.getElementById('inquiry');
+      if (inquirySec) {
+        inquirySec.scrollIntoView({ behavior: 'smooth' });
+        // Flash border on the select field
+        select.classList.add('ring-2', 'ring-primary-container');
+        setTimeout(() => {
+          select.classList.remove('ring-2', 'ring-primary-container');
+        }, 1500);
+      }
+    };
+
+    // Form Submission Handler
+    const rfqForm = document.getElementById('rfq-form');
+    const rfqSuccess = document.getElementById('rfq-success');
+
+    rfqForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const company = document.getElementById('field-company').value.trim();
+      const contact = document.getElementById('field-contact').value.trim();
+      const mesh = document.getElementById('field-mesh').value;
+      const volume = document.getElementById('field-volume').value.trim() || 'Standard Sample Lot';
+
+      // Generate a dynamic ticket number
+      const randomTicket = Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('rfq-id').textContent = `TICKET ID: SLI-2025-${randomTicket}`;
+
+      // Switch to success view
+      rfqForm.classList.add('hidden');
+      rfqSuccess.classList.remove('hidden');
+    });
+
+    window.resetRfqForm = function () {
+      rfqForm.reset();
+      rfqForm.classList.remove('hidden');
+      rfqSuccess.classList.add('hidden');
+      document.getElementById('sample-notice').classList.add('hidden');
+    };
+
+    // WhatsApp Desk Liaison Button
+    document.getElementById('whatsapp-btn').addEventListener('click', () => {
+      const company = document.getElementById('field-company').value.trim() || 'Prospective Buyer';
+      const mesh = document.getElementById('field-mesh').value;
+      const volume = document.getElementById('field-volume').value.trim() || 'Bulk / Sample';
+
+      const text = encodeURIComponent(
+        `Hello Shri Laxmi Industries (Ahmadpur MIDC).\n\n` +
+        `Inquiry for Rubber Crumbs via shrilaxmiindustries.co.com:\n` +
+        `• Company: ${company}\n` +
+        `• Specification: ${mesh} Mesh\n` +
+        `• Requirement: ${volume}\n\n` +
+        `Please share formal quotation and TDS.`
+      );
+
+      window.open(`https://wa.me/919422000000?text=${text}`, '_blank');
+    });
+  </script>
+
+</body>
+
+</html>
