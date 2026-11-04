@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ROOT_DIR = path.resolve(__dirname, '..');
+const ROOT_DIR = process.cwd();
 const PORT = process.env.PORT || 3000;
 
 const MIME_TYPES = {
@@ -27,7 +27,11 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
-  const filePath = path.join(ROOT_DIR, reqPath);
+  // Check public directory first, then root directory
+  let filePath = path.join(ROOT_DIR, 'public', reqPath);
+  if (!fs.existsSync(filePath)) {
+    filePath = path.join(ROOT_DIR, reqPath);
+  }
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
@@ -41,7 +45,7 @@ const server = http.createServer((req, res) => {
 
     res.writeHead(200, {
       'Content-Type': contentType,
-      'Cache-Control': 'no-cache'
+      'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=31536000, immutable'
     });
 
     const stream = fs.createReadStream(filePath);
@@ -55,3 +59,5 @@ server.listen(PORT, () => {
   console.log(`Local preview: http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 });
+
+export default server;
