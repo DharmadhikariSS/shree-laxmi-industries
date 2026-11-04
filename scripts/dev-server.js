@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const ROOT_DIR = path.resolve(__dirname, '..');
 const PORT = process.env.PORT || 3000;
 
 const MIME_TYPES = {
@@ -26,7 +27,7 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
-  const filePath = path.join(__dirname, reqPath);
+  const filePath = path.join(ROOT_DIR, reqPath);
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
@@ -54,4 +55,3 @@ server.listen(PORT, () => {
   console.log(`Local preview: http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 });
-

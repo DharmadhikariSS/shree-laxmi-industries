@@ -4,7 +4,7 @@
   "description": "Shri Laxmi Industries - Crumb Rubber & Polymer Manufacturing Plant, Ahmadpur MIDC, Latur",
   "type": "module",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node scripts/dev-server.js"
   },
   "keywords": [
     "crumb-rubber",
