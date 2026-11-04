@@ -16,7 +16,8 @@ const MIME_TYPES = {
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon'
+  '.ico': 'image/x-icon',
+  '.pdf': 'application/pdf'
 };
 
 const server = http.createServer((req, res) => {
@@ -49,7 +50,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`\n======================================================`);
-  console.log(`Shree Laxmi Industries Website is live!`);
+  console.log(`Shri Laxmi Industries Website is live!`);
   console.log(`Local preview: http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 });

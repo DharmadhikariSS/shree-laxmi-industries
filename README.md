@@ -1,7 +1,7 @@
-# Shree Laxmi Industries — Official B2B Website
-**Official Domain**: [https://shreelaxmiindustries.co.com](https://shreelaxmiindustries.co.com)
+# Shri Laxmi Industries — Official B2B Website
+**Official Domain**: [https://shrilaxmiindustries.co.com](https://shrilaxmiindustries.co.com)
 
-B2B manufacturing website for **Shree Laxmi Industries** (Crumb Rubber & Polymers Unit), located in Ahmadpur MIDC, Latur, Maharashtra.
+B2B manufacturing website for **Shri Laxmi Industries** (Crumb Rubber & Polymers Unit), located in Ahmadpur MIDC, Latur, Maharashtra.
 
 ## Key Features & Highlights
 - **Minimalist Industrial Aesthetic**: Clean typography (Inter + JetBrains Mono), spacious layout, zero clutter, and restrained industrial palette (Charcoal, Pure White, Slate, and Forest Green).
@@ -18,7 +18,7 @@ B2B manufacturing website for **Shree Laxmi Industries** (Crumb Rubber & Polymer
 ## How to Run Locally
 
 ### Option 1: Direct File
-Simply double-click [index.html](file:///d:/Vibe%20coding%20projects/Shree_Laxmi_Industries/index.html) in your browser.
+Simply double-click [index.html](file:///d:/Vibe%20coding%20projects/Shri_Laxmi_Industries/index.html) in your browser.
 
 ### Option 2: Node.js (Live Server)
 ```bash

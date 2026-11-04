@@ -1,7 +1,7 @@
 {
-  "name": "shree-laxmi-industries",
+  "name": "shri-laxmi-industries",
   "version": "1.0.0",
-  "description": "Shree Laxmi Industries - Crumb Rubber & Polymer Manufacturing Plant, Ahmadpur MIDC, Latur",
+  "description": "Shri Laxmi Industries - Crumb Rubber & Polymer Manufacturing Plant, Ahmadpur MIDC, Latur",
   "type": "module",
   "scripts": {
     "start": "node server.js",
@@ -15,6 +15,6 @@
     "ahmadpur-midc",
     "latur"
   ],
-  "author": "Shree Laxmi Industries",
+  "author": "Shri Laxmi Industries",
   "license": "ISC"
 }
